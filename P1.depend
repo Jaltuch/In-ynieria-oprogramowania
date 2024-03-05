@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1709654034 source:c:\users\student\documents\umlpj\p1\main.cpp
+	<iostream>
+	"Pies.h"
+	"Jamnik.h"
+	"Ssak.h"
+	<string>
+
+1709654002 c:\users\student\documents\umlpj\p1\pies.h
+	"Ssak.h"
+	<string>
+
+1709654010 c:\users\student\documents\umlpj\p1\ssak.h
+	<string>
+
+1709653990 c:\users\student\documents\umlpj\p1\jamnik.h
+	"Pies.h"
+	<string>
+
