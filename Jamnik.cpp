@@ -11,12 +11,14 @@
 
 
 #include "Jamnik.h"
+using namespace std;
 
 void Jamnik::Aportowanie() {
+    cout<<endl<<"aportowanie";
 
 }
 
 void Jamnik::Zabawa() {
-
+    cout<<endl<<"zabawa";
 }
 

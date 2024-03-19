@@ -8,19 +8,22 @@
 //  @ Author :
 //
 //
-
+using namespace std;
 
 #include "Ssak.h"
 
 void Ssak::Jesc() {
+    cout<<endl<<"jesc";
 
 }
 
 void Ssak::Pic() {
+    cout<<endl<<"pic";
 
 }
 
 void Ssak::Spac() {
+    cout<<endl<<"spac";
 
 }
 
