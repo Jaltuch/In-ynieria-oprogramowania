@@ -5,7 +5,7 @@
 //  @ Project : Untitled
 //  @ File Name : SYSTEM.cpp
 //  @ Date : 09.04.2024
-//  @ Author : 
+//  @ Author :
 //
 //
 
@@ -16,14 +16,28 @@ using namespace std;
 #include "SYSTEM.h"
 
 void SYSTEM::Uwierzyt() {
-
+    USER* newUser = new USER();
+    newUser->rejestruj();
+    tab.push_back(newUser);
 }
 
 void SYSTEM::Zaloguj() {
+    string tempLogin, tempPassword;
+    cout << "Podaj login: " << endl;
+    cin >> tempLogin;
+    cout << "Podaj haslo: " << endl;
+    cin >> tempPassword;
 
+    for (USER* user : tab) {
+        if (user->getLogin() == tempLogin && user->getPassword() == tempPassword) {
+            cout << "Zalogowano jako: " << tempLogin << endl;
+            return;
+        }
+    }
+    cout << "Nieprawid³owy login lub has³o!" << endl;
 }
 
 void SYSTEM::Dodaj() {
-
+    Uwierzyt();
 }
 

@@ -21,8 +21,11 @@ using namespace std;
 class USER {
 public:
 	void rejestruj();
-	void loguj();
+	bool loguj();
 	void wyloguj();
+
+	string getLogin() const { return login; }
+    string getPassword() const { return password; }
 private:
 	string login;
 	string password;

@@ -27,14 +27,26 @@ void USER::rejestruj() {
 
 }
 
-void USER::loguj() {
-    cout<<"Podaj login: "<<endl;
-    cout<<"Podaj haslo: "<<endl;
+bool USER::loguj() {
+    string tempLogin, tempPassword;
+    cout << "Podaj login: " << endl;
+    cin >> tempLogin;
+    cout << "Podaj haslo: " << endl;
+    cin >> tempPassword;
 
+    if (tempLogin == login && tempPassword == password) {
+        cout << "Zalogowano!" << endl;
+        return true;
+    } else {
+        cout << "Nieprawid³owy login lub has³o!" << endl;
+        return false;
+    }
 }
 
-void USER::wyloguj() {
 
+
+void USER::wyloguj() {
+    cout << "Wylogowano!" << endl;
 
 }
 

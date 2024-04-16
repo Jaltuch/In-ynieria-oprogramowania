@@ -13,9 +13,10 @@
 #if !defined(_SYSTEM_H)
 #define _SYSTEM_H
 
-#include<iostream>
-#include<string>
-#include<vector>
+#include <iostream>
+#include <string>
+#include <vector>
+#include "USER.h"
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
 	void Zaloguj();
 	void Dodaj();
 private:
-	vector<user*> tab;
+	vector<USER*> tab;
 };
 
 #endif  //_SYSTEM_H
